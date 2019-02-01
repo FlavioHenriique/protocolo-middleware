@@ -5,13 +5,13 @@ import java.util.Objects;
 public class RemoteRef {
     private String hostServer;
     private String hostClient;
-    private String portServer;
-    private String portClient;
+    private int portServer;
+    private int portClient;
 
     public RemoteRef() {
     }
 
-    public RemoteRef(String hostServer, String hostClient, String portServer, String portClient) {
+    public RemoteRef(String hostServer, String hostClient, int portServer, int portClient) {
         this.hostServer = hostServer;
         this.hostClient = hostClient;
         this.portServer = portServer;
@@ -34,19 +34,19 @@ public class RemoteRef {
         this.hostClient = hostClient;
     }
 
-    public String getPortServer() {
+    public int getPortServer() {
         return portServer;
     }
 
-    public void setPortServer(String portServer) {
+    public void setPortServer(int portServer) {
         this.portServer = portServer;
     }
 
-    public String getPortClient() {
+    public int getPortClient() {
         return portClient;
     }
 
-    public void setPortClient(String portClient) {
+    public void setPortClient(int portClient) {
         this.portClient = portClient;
     }
 
